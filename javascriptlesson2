@@ -1,0 +1,32 @@
+JavaScript Arrow function Format:
+
+const yourFn = () => {
+...
+}
+
+Implicitly returning:
+
+const implicit = () => "A STRING"
+
+You cannot return another object this way, this only works to return one string
+
+
+IIFE:
+
+(function myIIFE(num) {
+  return num * num
+}) (5)
+
+Function is called with argument of 5 immediately after defining it. The below is also doing the same thing, calling the function with an argument of 5 right after declaring the anonymous function/
+
+((num) => num * num)(5)
+
+The first part is an anonymous functino being defined, then it is immediately called with an argument of 5.
+
+Reduce function:
+
+array.reduce(function(param, meters)) {
+  ......
+}
+
+This will go through the array from front to back and perform the function on each element of the array
